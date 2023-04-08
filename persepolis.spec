@@ -3,6 +3,7 @@ Name:		persepolis
 Version:	3.2.0
 Release:	1
 License:	GPLv3+
+Group:		Networking/File transfer
 URL:		https://persepolisdm.github.io/
 Source0:	https://github.com/persepolisdm/%{name}/archive/%{version}/%{name}-%{version}.tar.gz
 BuildRequires:	aria2
