@@ -6,17 +6,20 @@ License:	GPLv3+
 Group:		Networking/File transfer
 URL:		https://persepolisdm.github.io/
 Source0:	https://github.com/persepolisdm/%{name}/archive/%{version}/%{name}-%{version}.tar.gz
-BuildRequires:	aria2
-BuildRequires:	pulseaudio-utils
 BuildRequires:	pkgconfig(appstream-glib)
 BuildRequires:	pkgconfig(python)
+BuildRequires:	python%{py_ver}dist(setuptools)
+# for tests
+BuildRequires:	aria2
+BuildRequires:	libnotify
+BuildRequires:	pulseaudio-utils
 BuildRequires:	python-qt5
 BuildRequires:	python%{py_ver}dist(psutil)
 BuildRequires:	python%{py_ver}dist(requests)
 BuildRequires:	python%{py_ver}dist(setproctitle)
-BuildRequires:	python%{py_ver}dist(setuptools)
 BuildRequires:	sound-theme-freedesktop
 BuildRequires:	youtube-dl
+BuildRequires:	ffmpeg
 
 Requires:	aria2
 Requires:	libnotify
