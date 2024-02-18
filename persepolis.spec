@@ -1,6 +1,6 @@
 Summary:	A powerful download manager powered by aria2
 Name:		persepolis
-Version:	3.2.0
+Version:	4.0.0
 Release:	1
 License:	GPLv3+
 Group:		Networking/File transfer
@@ -18,7 +18,7 @@ BuildRequires:	python%{py_ver}dist(psutil)
 BuildRequires:	python%{py_ver}dist(requests)
 BuildRequires:	python%{py_ver}dist(setproctitle)
 BuildRequires:	sound-theme-freedesktop
-BuildRequires:	youtube-dl
+BuildRequires:	yt-dlp
 BuildRequires:	ffmpeg
 
 Requires:	aria2
@@ -29,7 +29,7 @@ Requires:	python%{py_ver}dist(psutil)
 Requires:	python%{py_ver}dist(requests)
 Requires:	python%{py_ver}dist(setproctitle)
 Requires:	sound-theme-freedesktop
-Requires:	youtube-dl
+Requires:	yt-dlp
 Suggests:	ffmpeg
 
 BuildArch:	noarch
@@ -47,11 +47,11 @@ Persepolis is a download manager and a GUI for aria written in Python.
 %doc README.md
 %{_bindir}/%{name}
 %{_datadir}/applications/*%{name}.desktop
-%{_datadir}/pixmaps/*
 %{_datadir}/metainfo/com.github.persepolisdm.persepolis.appdata.xml
 %{py_puresitedir}/%{name}
 %{py_puresitedir}/%{name}-%{version}-py%{py_ver}.*-info
 %{_mandir}/man1/%{name}.1*
+%{_datadir}/icons/hicolor/scalable/apps/*
 
 #---------------------------------------------------------------------------
 
