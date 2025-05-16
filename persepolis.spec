@@ -1,6 +1,6 @@
 Summary:	A powerful download manager powered by aria2
 Name:		persepolis
-Version:	4.0.0
+Version:	5.1.1
 Release:	1
 License:	GPLv3+
 Group:		Networking/File transfer
@@ -28,6 +28,7 @@ Requires:	python-qt5
 Requires:	python%{py_ver}dist(psutil)
 Requires:	python%{py_ver}dist(requests)
 Requires:	python%{py_ver}dist(setproctitle)
+Requires: python%{py_ver}dist(dasbus)
 Requires:	sound-theme-freedesktop
 Requires:	yt-dlp
 Suggests:	ffmpeg
