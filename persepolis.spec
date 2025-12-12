@@ -1,7 +1,7 @@
 Summary:	A powerful download manager powered by aria2
 Name:		persepolis
 Version:	4.0.0
-Release:	1
+Release:	2
 License:	GPLv3+
 Group:		Networking/File transfer
 URL:		https://persepolisdm.github.io/
