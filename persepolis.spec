@@ -1,7 +1,7 @@
 Summary:	A powerful download manager powered by aria2
 Name:		persepolis
-Version:	4.0.0
-Release:	3
+Version:	5.2.0.0
+Release:	1
 License:	GPLv3+
 Group:		Networking/File transfer
 URL:		https://persepolisdm.github.io/
@@ -56,7 +56,7 @@ Persepolis is a download manager and a GUI for aria written in Python.
 #---------------------------------------------------------------------------
 
 %prep
-%autosetup -p1
+%autosetup -p1 -n persepolis-5.2.0
 rm 'persepolis/Persepolis Download Manager.py'
 
 
