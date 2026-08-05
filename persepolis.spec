@@ -6,6 +6,8 @@ License:	GPLv3+
 Group:		Networking/File transfer
 URL:		https://persepolisdm.github.io/
 Source0:	https://github.com/persepolisdm/%{name}/archive/%{version}/%{name}-%{version}.tar.gz
+
+BuildRequires: meson
 BuildRequires:	pkgconfig(appstream-glib)
 BuildRequires:	pkgconfig(python)
 BuildRequires:	python%{py_ver}dist(setuptools)
@@ -61,11 +63,10 @@ rm 'persepolis/Persepolis Download Manager.py'
 
 
 %build
-%{py_build}
+%meson
+%meson_build
 
 %install
-%{py_install}
-
+%meson_install
 # fix perm
 chmod a+x %{buildroot}/%{python3_sitelib}/persepolis/__main__.py
-
