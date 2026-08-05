@@ -51,7 +51,7 @@ Persepolis is a download manager and a GUI for aria written in Python.
 %{_datadir}/applications/*%{name}.desktop
 %{_datadir}/metainfo/com.github.persepolisdm.persepolis.appdata.xml
 %{py_puresitedir}/%{name}
-%{py_puresitedir}/%{name}-%{version}-py%{py_ver}.*-info
+#{py_puresitedir}/%{name}-%{version}-py%{py_ver}.*-info
 %{_mandir}/man1/%{name}.1*
 %{_datadir}/icons/hicolor/scalable/apps/*
 
