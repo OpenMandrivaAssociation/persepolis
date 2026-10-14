@@ -1,7 +1,7 @@
 Summary:	A powerful download manager powered by aria2
 Name:		persepolis
 Version:	5.2.0.0
-Release:	1
+Release:	2
 License:	GPLv3+
 Group:		Networking/File transfer
 URL:		https://persepolisdm.github.io/
@@ -9,16 +9,16 @@ Source0:	https://github.com/persepolisdm/%{name}/archive/%{version}/%{name}-%{ve
 
 BuildRequires: meson
 BuildRequires:	pkgconfig(appstream-glib)
-BuildRequires:	pkgconfig(python)
-BuildRequires:	python%{py_ver}dist(setuptools)
+BuildRequires:	pkgconfig(python3)
+BuildRequires:	python%{pyver}dist(setuptools)
 # for tests
 BuildRequires:	aria2
 BuildRequires:	libnotify
 BuildRequires:	pulseaudio-utils
-BuildRequires:	python-qt5
-BuildRequires:	python%{py_ver}dist(psutil)
-BuildRequires:	python%{py_ver}dist(requests)
-BuildRequires:	python%{py_ver}dist(setproctitle)
+BuildRequires:	python-qt5 >= 5.15.11-3
+BuildRequires:	python%{pyver}dist(psutil)
+BuildRequires:	python%{pyver}dist(requests)
+BuildRequires:	python%{pyver}dist(setproctitle)
 BuildRequires:	sound-theme-freedesktop
 BuildRequires:	yt-dlp
 BuildRequires:	ffmpeg
@@ -26,10 +26,10 @@ BuildRequires:	ffmpeg
 Requires:	aria2
 Requires:	libnotify
 Requires:	pulseaudio-utils
-Requires:	python-qt5
-Requires:	python%{py_ver}dist(psutil)
-Requires:	python%{py_ver}dist(requests)
-Requires:	python%{py_ver}dist(setproctitle)
+Requires:	python-qt5 >= 5.15.11-3
+Requires:	python%{pyver}dist(psutil)
+Requires:	python%{pyver}dist(requests)
+Requires:	python%{pyver}dist(setproctitle)
 Requires:	sound-theme-freedesktop
 Requires:	yt-dlp
 Suggests:	ffmpeg
